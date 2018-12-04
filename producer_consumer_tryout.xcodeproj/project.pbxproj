@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89FF790F21B62CDE004084B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FF790E21B62CDE004084B0 /* main.cpp */; };
+		89FF791821B63F84004084B0 /* producer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FF791721B63F84004084B0 /* producer.cpp */; };
+		89FF791B21B63FA2004084B0 /* consumer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FF791921B63FA2004084B0 /* consumer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,12 @@
 /* Begin PBXFileReference section */
 		89FF790B21B62CDE004084B0 /* producer_consumer_tryout */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = producer_consumer_tryout; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FF790E21B62CDE004084B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		89FF791521B62D21004084B0 /* my_concurrent_queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_concurrent_queue.hpp; sourceTree = "<group>"; };
+		89FF791621B63F5E004084B0 /* producer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = producer.hpp; sourceTree = "<group>"; };
+		89FF791721B63F84004084B0 /* producer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = producer.cpp; sourceTree = "<group>"; };
+		89FF791921B63FA2004084B0 /* consumer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = consumer.cpp; sourceTree = "<group>"; };
+		89FF791A21B63FA2004084B0 /* consumer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = consumer.hpp; sourceTree = "<group>"; };
+		89FF791C21B6402D004084B0 /* my_message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_message.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				89FF790E21B62CDE004084B0 /* main.cpp */,
+				89FF791521B62D21004084B0 /* my_concurrent_queue.hpp */,
+				89FF791721B63F84004084B0 /* producer.cpp */,
+				89FF791621B63F5E004084B0 /* producer.hpp */,
+				89FF791921B63FA2004084B0 /* consumer.cpp */,
+				89FF791A21B63FA2004084B0 /* consumer.hpp */,
+				89FF791C21B6402D004084B0 /* my_message.hpp */,
 			);
 			path = producer_consumer_tryout;
 			sourceTree = "<group>";
@@ -119,6 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89FF790F21B62CDE004084B0 /* main.cpp in Sources */,
+				89FF791821B63F84004084B0 /* producer.cpp in Sources */,
+				89FF791B21B63FA2004084B0 /* consumer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +255,8 @@
 		89FF791321B62CDE004084B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +265,8 @@
 		89FF791421B62CDE004084B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
